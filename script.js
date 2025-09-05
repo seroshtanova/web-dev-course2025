@@ -19,16 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // Toggle the 'active' class on the clicked card
             this.classList.toggle("active");
 
-            // Find the details section within this card
-            const details = this.querySelector(".content-card-details");
-            if (details) {
-                // Toggle display based on 'active' class
-                if (this.classList.contains("active")) {
-                    details.style.display = "block";
-                } else {
-                    details.style.display = "none";
-                }
-            }
+            // The CSS will handle the max-height transition based on the 'active' class
+            // No direct style manipulation needed here for display property
         });
     });
 });
