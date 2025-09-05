@@ -179,11 +179,13 @@ main {
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid #eee;
-    display: none; /* Hidden by default */
+    max-height: 0; /* Hidden by default */
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
 }
 
 .content-card.active .content-card-details {
-    display: block;
+    max-height: 1000px; /* Adjust as needed to accommodate content */
 }
 
 /* Footer */
